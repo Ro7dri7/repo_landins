@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Aleo:wght@400;600;700&family=Glory:wght@400;800&family=Hanken+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-hanken: 'Hanken Grotesk', sans-serif;
+  --font-aleo: 'Aleo', serif;
+  --font-adamina: 'Adamina', serif;
+  --font-glory: 'Glory', sans-serif;
+
+  --color-brand-marine: #1C1179;
+  --color-brand-blue: #004EAB;
+  --color-brand-cyan: #00D5F2; /* Border cyan border: 1.8px solid #00D5F2 */
+  --color-brand-cyan-light: #00D6F2; /* slightly different used in gradients/bg */
+  --color-brand-yellow: #FFE100;
+  --color-brand-yellow-alt: #FFD500;
+  
+  --color-brand-gray: #EAF0F8; /* Light gray for circles */
+  --color-brand-gray-light: #F0F7FF; /* background: #F0F7FF */
+  --color-brand-dark-blue: #18298B; /* bg features */
+  --color-brand-darker-blue: #182D8E; /* bg demostration */
+  --color-brand-darkest-blue: #13223F; /* Ellipse 1 bg */
+}
+
+body {
+  @apply font-sans;
+  @apply bg-white;
+  @apply text-black;
+  @apply antialiased;
+  @apply overflow-x-hidden;
+}
+
+/* Base custom utilities */
+.custom-border-cyan {
+  border: 1.8px solid #00D5F2;
+}
+
+.custom-form-bg {
+  background: rgba(240, 247, 255, 0.95);
+}
